@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_note"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/shape_note_bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.yara.noteapp.widget.TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="Trip to San fran"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:font_name="SFProDisplay"
+        app:font_style="SemiBold" />
+
+    <com.yara.noteapp.widget.TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="18/06/12"
+        android:textColor="#4A4A4A"
+        android:textSize="12sp"
+        app:font_name="SFProText"
+        app:font_style="Regular" />
+
+    <com.yara.noteapp.widget.TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:gravity="start|center_vertical"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="San fran was one of the coolest places i have ever\n been all the beautiful sightseeing and …"
+        android:textColor="#4A4A4A"
+        android:textSize="13sp"
+        app:font_name="SFProText"
+        app:font_style="Regular" />
+
+</RelativeLayout>

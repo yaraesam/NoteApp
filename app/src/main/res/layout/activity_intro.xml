@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/lay_img"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+
+        <ImageView
+            android:id="@+id/img_intro_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_intro_1_bg" />
+
+        <ImageView
+            android:id="@+id/img_intro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_intro_1" />
+
+    </RelativeLayout>
+
+    <com.yara.noteapp.widget.TextView
+        android:id="@+id/tv_intro_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Notebooks"
+        android:textColor="#7B1E58"
+        android:textSize="26sp"
+        app:font_name="SFProDisplay"
+        app:font_style="Bold" />
+
+    <com.yara.noteapp.widget.TextView
+        android:id="@+id/tv_intro_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_intro_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Notebooks are the best place \nto manage your Notes"
+        android:textColor="#7B1E58"
+        android:textSize="18sp"
+        app:font_name="AvenirNext"
+        app:font_style="Medium" />
+
+
+    <LinearLayout
+        android:id="@+id/lay_intro_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <com.yara.noteapp.widget.TextView
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_button_primary"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Sign in"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:font_name="SFProText"
+            app:font_style="Regular" />
+
+        <com.yara.noteapp.widget.TextView
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/shape_button_white"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Sign up"
+            android:textColor="#1A1824"
+            android:textSize="16sp"
+            app:font_name="SFProDisplay"
+            app:font_style="Regular" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_intro_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        tools:visibility="visible">
+
+        <com.yara.noteapp.widget.TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Skip"
+            android:textColor="#9B9B9B"
+            android:textSize="16sp"
+            app:font_name="AvenirNext"
+            app:font_style="Medium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/intro_oval_1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:padding="2dp"
+                android:src="@drawable/intro_oval_1" />
+
+            <ImageView
+                android:id="@+id/intro_oval_2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:padding="2dp"
+                android:src="@drawable/intro_oval_2" />
+        </LinearLayout>
+
+        <com.yara.noteapp.widget.TextView
+            android:id="@+id/next"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_button_next"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:font_name="AvenirNext"
+            app:font_style="Medium" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

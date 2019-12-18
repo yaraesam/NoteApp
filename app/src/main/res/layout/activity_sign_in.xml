@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SignUpActivity">
+
+    <com.yara.noteapp.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textColor="#1A1824"
+        android:textSize="14sp"
+        app:font_name="SFProDisplay"
+        app:font_style="Regular" />
+
+    <com.yara.noteapp.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Welcome back!\nYou’ve been missed"
+        android:textColor="#1A1824"
+        android:textSize="24sp"
+        app:font_name="SFProText"
+        app:font_style="Bold" />
+
+    <com.yara.noteapp.widget.EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your email address"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        app:font_name="SFProText"
+        app:font_style="Regular" />
+
+    <com.yara.noteapp.widget.EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        app:font_name="SFProText"
+        app:font_style="Regular" />
+
+    <com.yara.noteapp.widget.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Forgot password?"
+        android:textColor="#1A1824"
+        android:textSize="14sp"
+        app:font_name="SFProDisplay"
+        app:font_style="Regular" />
+
+    <com.yara.noteapp.widget.TextView
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_button_primary"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Sign in"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
