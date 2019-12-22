@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/shape_note_bg"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.yara.noteapp.widget.EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@null"
+        android:hint="Enter Note Title"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:font_name="SFProDisplay"
+        app:font_style="Regular" />
+
+    <com.yara.noteapp.widget.EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:gravity="start|center_vertical"
+        android:hint="Enter Note Content"
+        android:textColor="#4A4A4A"
+        android:textSize="15sp"
+        app:font_name="SFProText"
+        app:font_style="Regular" />
+
+    <com.yara.noteapp.widget.TextView
+        android:id="@+id/save"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_button_next"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:font_name="SFProText"
+        app:font_style="SemiBold" />
+
+</LinearLayout>
