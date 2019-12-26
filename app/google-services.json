@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "669894418468",
+    "firebase_url": "https://noteapp-ad20d.firebaseio.com",
+    "project_id": "noteapp-ad20d",
+    "storage_bucket": "noteapp-ad20d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669894418468:android:51c886c1c08018dea6b8b1",
+        "android_client_info": {
+          "package_name": "com.yara.noteapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669894418468-mv8bnsvok3j4qqqqg3chcm6s5oaj3n5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2kunMPBeabogloFcx3-nBwuEin53jeOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669894418468-mv8bnsvok3j4qqqqg3chcm6s5oaj3n5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

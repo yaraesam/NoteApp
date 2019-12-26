@@ -9,11 +9,13 @@
     tools:context=".NotesActivity">
 
     <ImageView
+        android:id="@+id/img_back"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@drawable/ic_back" />
 
     <com.yara.noteapp.widget.TextView
+        android:id="@+id/note_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -25,6 +27,7 @@
         app:font_style="Medium" />
 
     <com.yara.noteapp.widget.TextView
+        android:id="@+id/note_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -36,6 +39,7 @@
         app:font_style="Bold" />
 
     <com.yara.noteapp.widget.TextView
+        android:id="@+id/note_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

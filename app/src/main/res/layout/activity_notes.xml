@@ -13,6 +13,7 @@
         android:padding="16dp">
 
         <ImageView
+            android:id="@+id/img_back"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_back" />
@@ -34,47 +35,11 @@
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
-            <ScrollView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notesList_rv"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                    <include layout="@layout/item_note" />
-
-                </LinearLayout>
-            </ScrollView>
         </LinearLayout>
 
 

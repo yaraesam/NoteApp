@@ -32,14 +32,14 @@ public class NotebooksActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        LinearLayout item_notebook = findViewById(R.id.item_notebook);
+        /*LinearLayout item_notebook = findViewById(R.id.item_notebook);
         item_notebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(NotebooksActivity.this, NotesActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
