@@ -27,15 +27,6 @@ public class NotesActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        RelativeLayout item_note = findViewById(R.id.item_note);
-        item_note.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(NotesActivity.this, NoteActivity.class);
-                startActivity(intent);
-            }
-        });
-
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

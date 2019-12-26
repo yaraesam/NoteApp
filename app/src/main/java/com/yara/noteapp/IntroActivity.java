@@ -48,38 +48,29 @@ public class IntroActivity extends AppCompatActivity {
         lay_intro_next = findViewById(R.id.lay_intro_next);
         sign_in = findViewById(R.id.sign_in);
         sign_up = findViewById(R.id.sign_up);
-        skip.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PreferenceManager.setIntroShow(IntroActivity.this);
-                Intent intent = new Intent(IntroActivity.this, SignInActivity.class);
-                startActivity(intent);
-            }
+        skip.setOnClickListener(v -> {
+            PreferenceManager.setIntroShow(IntroActivity.this);
+            Intent intent = new Intent(IntroActivity.this, SignInActivity.class);
+            startActivity(intent);
+            finish();
         });
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (selectedIntro == 0)
-                    setSelectedIntro(1);
-                else if (selectedIntro == 1)
-                    setSelectedIntro(2);
-            }
+        next.setOnClickListener(v -> {
+            if (selectedIntro == 0)
+                setSelectedIntro(1);
+            else if (selectedIntro == 1)
+                setSelectedIntro(2);
         });
-        sign_in.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PreferenceManager.setIntroShow(IntroActivity.this);
-                Intent intent = new Intent(IntroActivity.this, SignInActivity.class);
-                startActivity(intent);
-            }
+        sign_in.setOnClickListener(v -> {
+            PreferenceManager.setIntroShow(IntroActivity.this);
+            Intent intent = new Intent(IntroActivity.this, SignInActivity.class);
+            startActivity(intent);
+            finish();
         });
-        sign_up.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PreferenceManager.setIntroShow(IntroActivity.this);
-                Intent intent = new Intent(IntroActivity.this, SignUpActivity.class);
-                startActivity(intent);
-            }
+        sign_up.setOnClickListener(v -> {
+            PreferenceManager.setIntroShow(IntroActivity.this);
+            Intent intent = new Intent(IntroActivity.this, SignUpActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 
